@@ -1,0 +1,17 @@
+# Desktop CMake build trees
+build/
+build-*/
+out/
+CMakeUserPresets.json
+
+# PlatformIO (ESP32) build output and IDE-generated config
+.pio/
+.vscode/
+
+# Logs and temporary files
+*.log
+*.tmp
+*~
+
+# Generated audio (test signals, simulated recordings)
+*.wav

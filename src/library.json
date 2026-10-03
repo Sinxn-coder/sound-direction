@@ -1,0 +1,20 @@
+{
+  "name": "sdl_core",
+  "version": "0.1.0",
+  "description": "Portable sound-direction core (TDOA / normalized cross-correlation). Used by the ESP32 target via PlatformIO; the desktop build uses CMakeLists.txt instead.",
+  "frameworks": "*",
+  "platforms": "*",
+  "build": {
+    "srcDir": ".",
+    "includeDir": ".",
+    "srcFilter": [
+      "-<*>",
+      "+<direction/CrossCorrelation.cpp>",
+      "+<direction/DirectionEngine.cpp>",
+      "+<direction/TemporalSmoother.cpp>",
+      "+<utils/DspUtils.cpp>"
+    ],
+    "flags": ["-DSDL_CORE_FLOAT_ACCUM"],
+    "libLDFMode": "off"
+  }
+}
